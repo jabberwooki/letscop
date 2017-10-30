@@ -1,0 +1,14 @@
+uuid: 37f5ba1d-a2e0-4b42-97bd-04cd36ca6b06
+name: Drupal
+mail: christophe.espiau@laposte.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

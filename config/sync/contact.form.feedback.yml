@@ -1,0 +1,14 @@
+uuid: 9db1b418-760f-4b5d-9ab4-cb13474481b0
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Retours utilisateurs sur le site web'
+recipients:
+  - christophe.espiau@laposte.net
+reply: ''
+weight: 0
+message: 'Votre message a été envoyé.'
+redirect: ''
