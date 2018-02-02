@@ -1,0 +1,8 @@
+#
+# robots-disallow-all.txt
+#
+# This file is to prevent the crawling and indexing of entire site in dev and stating environments.
+#
+
+User-agent: *
+Disallow: /

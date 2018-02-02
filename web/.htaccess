@@ -187,3 +187,10 @@ AddEncoding gzip svgz
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
 </IfModule>
+
+RewriteCond %{HTTP_HOST} ^www.letscop.dev$
+RewriteRule ^robots.txt /robots-disallow-all.txt [L]
+
+RewriteCond %{HTTP_HOST} ^letscop.korora.fr$
+RewriteRule ^robots.txt /robots-disallow-all.txt [L]
+
