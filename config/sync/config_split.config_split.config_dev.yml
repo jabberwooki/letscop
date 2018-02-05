@@ -1,0 +1,19 @@
+uuid: 59a63710-ba7e-45b9-b620-2744b941d6b8
+langcode: fr
+status: true
+dependencies: {  }
+id: config_dev
+label: 'Development config'
+folder: ../config/splits/config_dev
+module:
+  devel: 0
+  devel_generate: 0
+  field_ui: 0
+  menu_ui: 0
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
