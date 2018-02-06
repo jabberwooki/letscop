@@ -1,0 +1,22 @@
+uuid: cef0a911-b99b-4ac0-b3f1-c52c5f8302e6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - letscop
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: letscop_breadcrumbs
+theme: letscop
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Fils d''Ariane'
+  provider: system
+  label_display: '0'
+visibility: {  }

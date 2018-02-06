@@ -1,0 +1,20 @@
+uuid: 27ab0c57-d7ce-42e4-aca0-9f12564da3af
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - letscop
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: letscop_local_actions
+theme: letscop
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

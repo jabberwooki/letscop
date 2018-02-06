@@ -1,0 +1,22 @@
+uuid: 28e3b098-2fae-48fd-91a4-683b7211e878
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - letscop
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: letscop_local_tasks
+theme: letscop
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

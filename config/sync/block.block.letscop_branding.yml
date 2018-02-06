@@ -1,0 +1,25 @@
+uuid: c35984dc-f60c-4db4-a174-89e6e6c7228b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - letscop
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: letscop_branding
+theme: letscop
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marque du site'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
