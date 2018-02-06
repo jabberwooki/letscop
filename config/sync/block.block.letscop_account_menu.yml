@@ -1,6 +1,6 @@
 uuid: c5f1ba41-7b77-4622-8ddb-e24fb5658374
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -13,7 +13,7 @@ _core:
 id: letscop_account_menu
 theme: letscop
 region: navigation
-weight: 0
+weight: -3
 provider: null
 plugin: 'system_menu_block:account'
 settings:
