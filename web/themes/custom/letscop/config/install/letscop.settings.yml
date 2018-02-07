@@ -13,3 +13,8 @@
 
 # Disable the CDN provider so compiled LESS source files can be used.
 cdn_provider: ''
+
+# Site logo
+logo:
+  path: 'themes/custom/letscop/letscop-logo.png'
+  use_default: false

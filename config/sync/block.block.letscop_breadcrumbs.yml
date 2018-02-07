@@ -1,4 +1,4 @@
-uuid: cef0a911-b99b-4ac0-b3f1-c52c5f8302e6
+uuid: fd3c503b-79e1-46e8-bc84-49a10c9885e3
 langcode: fr
 status: false
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: letscop_breadcrumbs
 theme: letscop
 region: navigation
-weight: -4
+weight: -3
 provider: null
 plugin: system_breadcrumb_block
 settings:

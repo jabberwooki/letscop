@@ -1,20 +1,23 @@
 cdn_provider: ''
+logo:
+  path: themes/custom/letscop/letscop-logo.png
+  url: ''
+  use_default: false
 _core:
-  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+  default_config_hash: bj-15hg8hWCCdvx2Ij3SatI5YjXiyR-lKU709jbvZe8
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: 'http://www.letscop.dev/themes/contrib/bootstrap/favicon.ico'
+  url: 'http://www.letscop.dev/themes/custom/letscop/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
+  letscop: 8000
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: true
-schemas:
-  bootstrap: 8000
-  letscop: 8000
+fluid_container: 1
+table_responsive: '-1'
+table: ''
