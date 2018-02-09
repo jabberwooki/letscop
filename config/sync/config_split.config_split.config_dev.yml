@@ -12,7 +12,8 @@ module:
   menu_ui: 0
   views_ui: 0
 theme: {  }
-blacklist: {  }
+blacklist:
+  - system.performance
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

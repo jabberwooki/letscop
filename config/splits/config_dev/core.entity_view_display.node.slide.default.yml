@@ -1,0 +1,27 @@
+uuid: f3ce7af2-f2c2-4074-a7cc-ee3d89da057c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.slide.field_image_file
+    - node.type.slide
+  module:
+    - image
+    - user
+id: node.slide.default
+targetEntityType: node
+bundle: slide
+mode: default
+content:
+  field_image_file:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true
+  links: true

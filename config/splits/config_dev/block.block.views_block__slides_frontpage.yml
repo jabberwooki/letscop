@@ -1,0 +1,30 @@
+uuid: 47cfbaba-fcc7-41f8-b007-079689b82d7f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.slides
+  module:
+    - system
+    - views
+  theme:
+    - letscop
+id: views_block__slides_frontpage
+theme: letscop
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:slides-frontpage'
+settings:
+  id: 'views_block:slides-frontpage'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

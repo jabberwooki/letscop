@@ -7,6 +7,7 @@ toolbar_items:
   - devel.menu_rebuild
   - devel.reinstall
   - devel.route_info
+  - devel.state_system_page
 _core:
   default_config_hash: ysHEvvazIuaJ5BdY0dUw2_my_Q5hM8ypdXwFfaIrvMw
 langcode: fr

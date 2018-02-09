@@ -20,3 +20,17 @@ bootstrap-scripts:
     bootstrap/js/scrollspy.js: {}
     bootstrap/js/tab.js: {}
     bootstrap/js/transition.js: {}
+
+#slick-carousel:
+#  version: "1.0.0"
+#  css:
+#    theme:
+#      libraries/slick/slick.ss: {}
+#      libraries/slick/slick-theme.css: {}
+#  js:
+#    libraries/slick/slick.min.js: {}
+#    js/letscop-slick-carousel.js: {}
+#
+#  dependencies:
+#    - core/jquery
+

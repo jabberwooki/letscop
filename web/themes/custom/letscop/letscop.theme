@@ -6,3 +6,9 @@
  *
  * Place your custom PHP code in this file.
  */
+
+function letscop_preprocess_page(&$variables) {
+//  if ($variables['is_front']) {
+//    $variables['#attached']['library'][] = 'letscop/slick-carousel';
+//  }
+}
