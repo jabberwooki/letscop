@@ -1,0 +1,18 @@
+uuid: cfaf3f84-9261-4c04-aae1-e6874a275def
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.team_member
+id: node.team_member.title
+field_name: title
+entity_type: node
+bundle: team_member
+label: Prénom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

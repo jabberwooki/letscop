@@ -95,7 +95,9 @@
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div class="row">
+    <!-- [CE] Si on n'est pas sur la page d'accueil, ajout de la classe 'container' pour re-centrer le contenu. -->
+    {% set div_classes = (not is_front) ? 'row container': 'row' %}
+    <div class="{{ div_classes }}">
 
       {# Header #}
       {% if page.header %}
