@@ -1,0 +1,38 @@
+uuid: 405b9abb-8f46-4db8-a430-43cd85c95e93
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_member_picto
+    - node.type.team_member
+  module:
+    - image
+id: node.team_member.field_member_picto
+field_name: field_member_picto
+entity_type: node
+bundle: team_member
+label: Pictogramme
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: member_pictos
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

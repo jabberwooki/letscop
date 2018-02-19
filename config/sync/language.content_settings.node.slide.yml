@@ -1,0 +1,11 @@
+uuid: e2f06654-304a-4de6-9798-cadf6b26d147
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.slide
+id: node.slide
+target_entity_type_id: node
+target_bundle: slide
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,17 @@
+uuid: 0559380e-bc2d-4af5-8963-cdac7c3b96bb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Membre de l''équipe'
+type: team_member
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

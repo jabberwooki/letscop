@@ -1,0 +1,9 @@
+id: firstname
+label: Prénom
+ui_limit: team_member|teaser
+properties:
+  ds_plugin: node_title
+type: copy
+type_label: 'Copy field'
+entities:
+  node: node

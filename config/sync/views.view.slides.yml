@@ -1,22 +1,19 @@
-uuid: 073025e5-5ca6-495c-8cba-8dfea4e8ad49
+uuid: e40372dd-a453-466d-8ac5-46e5794fefee
 langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - field.storage.node.body
-    - field.storage.node.field_member_picto
-    - node.type.team_member
+    - field.storage.node.field_image_file
+    - node.type.slide
   module:
-    - ds
     - image
     - node
-    - text
+    - slick_views
     - user
-id: team
-label: Equipe
+id: slides
+label: Diapositives
 module: views
-description: 'LETSCOP : Equipes'
+description: 'LETSCOP : Diapositives'
 tag: letscop
 base_table: node_field_data
 base_field: nid
@@ -56,38 +53,52 @@ display:
       pager:
         type: none
         options:
-          items_per_page: 0
           offset: 0
       style:
-        type: grid
+        type: slick
         options:
-          grouping: {  }
-          columns: 3
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
+          vanilla: false
+          optionset: default
+          skin: ''
+          layout: ''
+          caption:
+            field_image_file: '0'
+            title: '0'
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_caption: ''
+          grid_header: ''
+          grid: null
+          grid_medium: null
+          grid_small: null
+          visible_items: null
+          preserve_keys: false
+          image: field_image_file
+          thumbnail: ''
+          overlay: ''
+          title: title
+          link: ''
+          class: ''
+          id: ''
+          override: true
+          overridables:
+            dots: dots
+            arrows: '0'
+            autoplay: '0'
+            draggable: '0'
+            infinite: '0'
+            mouseWheel: '0'
+            randomize: '0'
+            variableWidth: '0'
+          cache: 0
+          current_view_mode: frontpage
       row:
-        type: 'ds_entity:node'
-        options:
-          relationship: none
-          view_mode: teaser
-          alternating_fieldset:
-            alternating: false
-            allpages: false
-          grouping_fieldset:
-            group: false
-            group_field: node_field_data|title
-            group_field_function: ''
-          advanced_fieldset:
-            advanced: false
+        type: fields
       fields:
-        field_member_picto:
-          id: field_member_picto
-          table: node__field_member_picto
-          field: field_member_picto
+        field_image_file:
+          id: field_image_file
+          table: node__field_image_file
+          field: field_image_file
           relationship: none
           group_type: group
           admin_label: ''
@@ -213,68 +224,6 @@ display:
           entity_type: node
           entity_field: title
           plugin_id: field
-        body:
-          id: body
-          table: node__body
-          field: body
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: text_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
       filters:
         status:
           value: '1'
@@ -292,26 +241,12 @@ display:
           table: node_field_data
           field: type
           value:
-            team_member: team_member
+            slide: slide
           entity_type: node
           entity_field: type
           plugin_id: bundle
-      sorts:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          order: ASC
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-      title: 'L''équipe'
+      sorts: {  }
+      title: 'Diaporama accueil'
       header: {  }
       footer: {  }
       empty: {  }
@@ -326,16 +261,15 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_member_picto'
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
+        - 'config:field.storage.node.field_image_file'
+  frontpage:
+    display_plugin: block
+    id: frontpage
+    display_title: 'Diaporama accueil'
     position: 1
     display_options:
       display_extenders: {  }
-      path: equipe
+      display_description: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -344,5 +278,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_member_picto'
+        - 'config:field.storage.node.field_image_file'

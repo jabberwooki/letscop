@@ -1,0 +1,22 @@
+uuid: a918d9c4-3068-4586-b5a6-c73c24495882
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.team_member
+  module:
+    - text
+id: node.team_member.body
+field_name: body
+entity_type: node
+bundle: team_member
+label: Biographie
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

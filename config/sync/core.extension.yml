@@ -11,15 +11,18 @@ module:
   comment: 0
   config: 0
   config_filter: 0
-  config_split: 0
   contact: 0
   contextual: 0
   ctools: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_group: 0
+  field_ui: 0
   file: 0
   filter: 0
   help: 0
@@ -29,6 +32,7 @@ module:
   layout_discovery: 0
   link: 0
   locale: 0
+  menu_ui: 0
   node: 0
   options: 0
   page_cache: 0
@@ -47,9 +51,11 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_ui: 0
   ds: 1
   menu_link_content: 1
   pathauto: 1
+  ds_extras: 2
   views: 10
   standard: 1000
 theme:
