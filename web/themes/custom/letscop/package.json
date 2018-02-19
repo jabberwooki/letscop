@@ -1,0 +1,25 @@
+{
+  "name": "letscop",
+  "version": "0.0.1",
+  "description": "Build utility for working with the Letscop bootstrap subtheme",
+  "author": "Christophe Espiau",
+  "contributors": [
+    {
+      "name": "Christophe Espiau",
+      "email": "christophe.espiau@gmail.com"
+    },
+    {
+      "name": "Yvan Douenel",
+      "email": "y.douenel@coopernet.fr"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.5.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-watch": "^5.0.0"
+  },
+  "license": "GPL"
+}
