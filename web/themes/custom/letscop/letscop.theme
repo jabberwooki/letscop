@@ -11,4 +11,10 @@ function letscop_preprocess_page(&$variables) {
 //  if ($variables['is_front']) {
 //    $variables['#attached']['library'][] = 'letscop/slick-carousel';
 //  }
+
+//  $url = Url::fromRoute('<current');
+  $current_path = \Drupal::service('path.current')->getPath();
+  if ($current_path == '/equipe') {
+    $variables['#attached']['library'][] = 'letscop/letscop-team';
+  }
 }

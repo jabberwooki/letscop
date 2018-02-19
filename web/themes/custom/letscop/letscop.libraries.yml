@@ -34,3 +34,7 @@ bootstrap-scripts:
 #  dependencies:
 #    - core/jquery
 
+letscop-team:
+  version: "1.0.0"
+  js:
+    js/letscop-team.js: {}

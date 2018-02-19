@@ -1,0 +1,168 @@
+.main-container {
+  padding: 0;
+
+  > .row {
+    margin-left: auto;
+    margin-right: auto;
+
+    h1.page-header {
+      color: #00cc99;
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+// DIAPORAMA ACCUEIL
+body.path-frontpage > .main-container > .row > .col-sm-12 {
+  padding: 0;
+}
+.slick--view--slides--frontpage {
+
+  .slick__slider {
+    position: relative;
+
+    .slick-list {
+
+      .slide__content {
+        position: relative;
+
+        .slide__caption {
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          z-index: 100;
+          padding: 1em 2em;
+          background-color: #000;
+          opacity: 0.6;
+          border: 5px solid #0c9;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+
+          .slide__title {
+            color: white;
+            margin: 0;
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    ul.slick-dots {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      z-index: 200;
+      right: 15px;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      li {
+        //width: 10px;
+        //height: 10px;
+        //margin: 10px 0;
+
+        button {
+          background-color: white;
+          border: 1px solid white;
+          padding: 0;
+          margin: 10px 0;
+          font-size: 1px;
+          width: 10px;
+          height: 10px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+        }
+      }
+
+      li.slick-active {
+
+        button {
+          background-color: #0c9;
+          border: 1px solid #0c9;
+        }
+      }
+    }
+  }
+}
+
+// RUBRIQUE EQUIPE
+body.path-equipe {
+  background-image: url("../images/team-bg.jpg");
+}
+
+h1.page-header {
+  margin-top: 100px;
+  margin-bottom: -20px;
+}
+
+.view-team {
+
+  .views-col {
+    //margin: 1%;
+    //padding: 1%;
+
+    .node--view-mode-teaser {
+      height: 100%;
+      padding: 12px;
+      margin: 0;
+
+      .bs-region--main {
+        position: relative;
+        height: 100%;
+        background-color: white;
+
+        .picto-name-wrapper {
+          margin-top: 50%;
+          transform: translate(0, -50%);
+
+          .field--name-field-member-picto {
+
+            img {
+              margin: 0 auto;
+            }
+          }
+
+          .field--name-node-title {
+            text-align: center;
+
+            h3 {
+              text-transform: uppercase;
+              color: #00cc99;
+              font-size: 130%;
+              margin-top: 0;
+            }
+          }
+        }
+
+        .firstname-bio-wrapper {
+          position: absolute;
+          top: 0;
+          background-color: white;
+          display: none;
+
+          .field--name-dynamic-copy-fieldnode-firstname {
+            text-transform: uppercase;
+            font-size: 130%;
+            color: #00cc99;
+            margin-top: 15px;
+          }
+
+          .field--name-body {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+  //
+  //.views-col:before {
+  //  content: "";
+  //  display: block;
+  //  padding-top: 100%;
+  //}
+}
