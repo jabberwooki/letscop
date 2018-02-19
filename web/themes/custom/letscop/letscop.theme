@@ -12,9 +12,15 @@ function letscop_preprocess_page(&$variables) {
 //    $variables['#attached']['library'][] = 'letscop/slick-carousel';
 //  }
 
-//  $url = Url::fromRoute('<current');
-  $current_path = \Drupal::service('path.current')->getPath();
-  if ($current_path == '/equipe') {
-    $variables['#attached']['library'][] = 'letscop/letscop-team';
+  $path = \Drupal::request()->getpathInfo();
+
+  switch ($path) {
+    case '/agence':
+      $variables['#attached']['library'][] = 'letscop/letscop-agence';
+      break;
+
+    case '/equipe':
+      $variables['#attached']['library'][] = 'letscop/letscop-team';
+      break;
   }
 }

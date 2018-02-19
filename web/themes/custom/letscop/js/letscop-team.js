@@ -6,9 +6,7 @@
   Drupal.behaviors.letscopTeam = {
     attach: function (context, settings) {
       $(document).ready(function(){
-        // $('.field--name-body').hide();
 
-        console.log('dans equipe');
         cellWidth = $('.views-col').width() + 'px';
         $('.views-col').height(cellWidth);
 
