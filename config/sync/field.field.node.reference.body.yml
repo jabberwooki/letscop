@@ -1,0 +1,22 @@
+uuid: cafb59bd-cd4c-4f9a-92d2-7481f1532318
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.reference
+  module:
+    - text
+id: node.reference.body
+field_name: body
+entity_type: node
+bundle: reference
+label: Descriptif
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

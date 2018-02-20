@@ -1,0 +1,19 @@
+uuid: 84d30125-a23d-4f48-a9b1-d4db26abaa1f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_made_by
+field_name: field_made_by
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

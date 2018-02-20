@@ -1,0 +1,29 @@
+uuid: 6f8b1ab8-a23a-4637-a94c-11db83e84ce9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_made_by
+    - node.type.reference
+    - node.type.team_member
+id: node.reference.field_made_by
+field_name: field_made_by
+entity_type: node
+bundle: reference
+label: 'Projet mené par'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      team_member: team_member
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
