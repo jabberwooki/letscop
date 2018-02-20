@@ -43,3 +43,9 @@ letscop-team:
   version: "1.0.0"
   js:
     js/letscop-team.js: {}
+
+letscop-references:
+  version: "1.0.0"
+  js:
+    js/letscop-references.js: {}
+

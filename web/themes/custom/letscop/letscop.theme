@@ -23,5 +23,12 @@ function letscop_preprocess_page(&$variables) {
       $variables['#attached']['library'][] = 'letscop/letscop-team';
       $variables['is_team_page'] = TRUE;
       break;
+
+    case '/references':
+      $variables['#attached']['library'][] = 'letscop/letscop-references';
+      break;
+
+    default:
+
   }
 }
