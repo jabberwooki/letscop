@@ -6,9 +6,11 @@ dependencies:
     - field.field.node.reference.body
     - field.field.node.reference.field_image
     - field.field.node.reference.field_made_by
+    - field.field.node.reference.field_site_url
     - node.type.reference
   module:
     - image
+    - link
     - text
     - user
 id: node.reference.default
@@ -39,6 +41,18 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_site_url:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 100
