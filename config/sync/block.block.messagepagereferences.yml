@@ -1,0 +1,31 @@
+uuid: eda4a292-5614-4ba0-9b98-124c163b4580
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f49b5d71-813b-4c96-9c62-a8ebd64120d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - letscop
+id: messagepagereferences
+theme: letscop
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:f49b5d71-813b-4c96-9c62-a8ebd64120d6'
+settings:
+  id: 'block_content:f49b5d71-813b-4c96-9c62-a8ebd64120d6'
+  label: 'Message page références'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /references
+    negate: false
+    context_mapping: {  }

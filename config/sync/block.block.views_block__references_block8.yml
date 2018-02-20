@@ -1,22 +1,22 @@
-uuid: 47cfbaba-fcc7-41f8-b007-079689b82d7f
+uuid: 62a9ec41-242e-42f5-a59e-fe3ad13d6e48
 langcode: fr
 status: true
 dependencies:
   config:
-    - views.view.slides
+    - views.view.references
   module:
     - system
     - views
   theme:
     - letscop
-id: views_block__slides_frontpage
+id: views_block__references_block8
 theme: letscop
 region: content
-weight: -4
+weight: -3
 provider: null
-plugin: 'views_block:slides-frontpage'
+plugin: 'views_block:references-block8'
 settings:
-  id: 'views_block:slides-frontpage'
+  id: 'views_block:references-block8'
   label: ''
   provider: views
   label_display: '0'
@@ -25,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /references
     negate: false
     context_mapping: {  }

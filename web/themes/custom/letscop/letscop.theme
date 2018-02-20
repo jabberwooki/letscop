@@ -21,6 +21,7 @@ function letscop_preprocess_page(&$variables) {
 
     case '/equipe':
       $variables['#attached']['library'][] = 'letscop/letscop-team';
+      $variables['is_team_page'] = TRUE;
       break;
   }
 }
