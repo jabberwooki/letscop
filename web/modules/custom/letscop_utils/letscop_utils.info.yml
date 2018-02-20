@@ -1,0 +1,6 @@
+name: Letscop Utils
+type: module
+description: "Utilities module containing various functions."
+version: 8.x-1.0
+core: 8.x
+package: Letscop
