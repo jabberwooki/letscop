@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "93770bfcab5fc0eebb356f101a925887",
+    "content-hash": "2f675f30aa03daeb5ea9de07fa30240d",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2567,6 +2567,58 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
+            }
+        },
+        {
+            "name": "drupal/fixed_block_content",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/fixed_block_content",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fixed_block_content-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "765f99ba836dbd8ccb46b8c6852fffc454353ea2"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1514044684",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Manuel Adan",
+                    "homepage": "https://www.drupal.org/user/516420",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides fixed placements for custom blocks.",
+            "homepage": "http://drupal.org/project/fixed_block_content",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://cgit.drupalcode.org/fixed_block_content",
+                "issues": "https://drupal.org/project/issues/fixed_block_content"
             }
         },
         {
@@ -7539,6 +7591,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/fixed_block_content": 10,
         "drupal/slick_views": 5
     },
     "prefer-stable": true,
