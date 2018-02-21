@@ -5,10 +5,14 @@ dependencies:
   config:
     - fixed_block_content.fixed_block_content.ref_page_text
   module:
+    - block_class
     - fixed_block_content
     - system
   theme:
     - letscop
+third_party_settings:
+  block_class:
+    classes: 'col-sm-6 col-sm-offset-6'
 id: textedelapagereferences
 theme: letscop
 region: content

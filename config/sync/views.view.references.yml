@@ -441,8 +441,8 @@ display:
       style:
         type: grid
         options:
-          grouping: {  }
-          columns: 4
+          uses_fields: false
+          columns: 2
           automatic_width: true
           alignment: horizontal
           col_class_default: true
@@ -730,7 +730,7 @@ display:
           field: nothing
           plugin_id: custom
       display_description: ''
-      css_class: ''
+      css_class: col-sm-6
     cache_metadata:
       max-age: -1
       contexts:
