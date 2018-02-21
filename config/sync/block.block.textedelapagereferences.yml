@@ -6,6 +6,7 @@ dependencies:
     - fixed_block_content.fixed_block_content.ref_page_text
   module:
     - fixed_block_content
+    - system
   theme:
     - letscop
 id: textedelapagereferences
@@ -20,4 +21,9 @@ settings:
   provider: fixed_block_content
   label_display: '0'
   view_mode: ''
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /references
+    negate: false
+    context_mapping: {  }
