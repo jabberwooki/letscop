@@ -11,17 +11,11 @@ use Drupal\Core\Form\FormStateInterface;
 
 
 function letscop_utils_form_node_reference_form_alter(&$form, FormStateInterface &$form_state, $form_id) {
-//  kint($form);
-//  dpm($form['field_site_url']['widget'][0]['title']['#default_value']);
   $form['field_site_url']['widget'][0]['title']['#default_value'] = 'Voir le site';
 }
 
 function letscop_utils_form_node_reference_edit_form_alter(&$form, FormStateInterface &$form_state, $form_id) {
-//  kint($form);
-//  dpm('default = ' . $form['field_site_url']['widget'][0]['title']['#default_value']);
   if (empty($form['field_site_url']['widget'][0]['title']['#default_value'])) {
     $form['field_site_url']['widget'][0]['title']['#default_value'] = 'Voir le site';
   }
 }
-
-
