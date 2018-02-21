@@ -1,0 +1,12 @@
+uuid: ce71a040-7b24-45e6-bdae-ea030c69a055
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+  content:
+    - 'block_content:basic:4823592f-4252-4545-b876-705c07dc3bc3'
+id: ref_page_text
+title: 'Texte de la page Références'
+block_content_bundle: basic
+default_content: '{"_links":{"self":{"href":"http:\/\/www.letscop.dev\/block\/4?_format=hal_json"},"type":{"href":"http:\/\/fixed_block_content.drupal.org\/rest\/type\/block_content\/basic"}},"langcode":[{"value":"fr","lang":"fr"}],"type":[{"target_id":"basic"}],"info":[{"value":"Texte de la page R\u00e9f\u00e9rences","lang":"fr"}],"default_langcode":[{"value":true,"lang":"fr"}],"revision_translation_affected":[{"value":true,"lang":"fr"}],"body":[{"value":"Tata","format":"restricted_html","summary":"","lang":"fr"}]}'

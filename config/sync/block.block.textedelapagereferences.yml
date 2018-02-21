@@ -1,0 +1,23 @@
+uuid: b4c26e19-55bc-45c4-99f7-bf041c15578f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - fixed_block_content.fixed_block_content.ref_page_text
+  module:
+    - fixed_block_content
+  theme:
+    - letscop
+id: textedelapagereferences
+theme: letscop
+region: content
+weight: -1
+provider: null
+plugin: 'fixed_block_content:ref_page_text'
+settings:
+  id: 'fixed_block_content:ref_page_text'
+  label: 'Texte de la page Références'
+  provider: fixed_block_content
+  label_display: '0'
+  view_mode: ''
+visibility: {  }

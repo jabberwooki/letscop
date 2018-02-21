@@ -12,7 +12,7 @@ dependencies:
 id: views_block__references_block8
 theme: letscop
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: 'views_block:references-block8'
 settings:
