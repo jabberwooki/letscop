@@ -13,10 +13,10 @@ function letscop_preprocess_page(&$variables) {
 //  }
 
   $path = \Drupal::request()->getpathInfo();
-
   switch ($path) {
     case '/agence':
       $variables['#attached']['library'][] = 'letscop/letscop-agence';
+      $variables['is_agence_page'] = TRUE;
       break;
 
     case '/equipe':
@@ -26,9 +26,30 @@ function letscop_preprocess_page(&$variables) {
 
     case '/references':
       $variables['#attached']['library'][] = 'letscop/letscop-references';
+      $variables['is_references_page'] = TRUE;
+      break;
+
+    case '/contact':
+      $variables['is_contact_page'] = TRUE;
       break;
 
     default:
 
+  }
+}
+function letscop_preprocess_image(&$variables) {
+  if (isset($variables['attributes']['width']) && isset($variables['attributes']['height'])) {
+    unset($variables['attributes']['width']);
+    unset($variables['attributes']['height']);
+  }
+}
+function letscop_preprocess_html(&$variables) {
+  $variables['attributes']['class'][] = 'class-name';
+}
+
+function letscop_preprocess_page_title(&$variables) {
+  $path = \Drupal::request()->getpathInfo();
+  if($path == "/contact") {
+    $variables['is_contact_page'] = TRUE;
   }
 }
