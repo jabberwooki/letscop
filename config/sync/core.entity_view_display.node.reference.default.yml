@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.reference.field_image
     - field.field.node.reference.field_made_by
     - field.field.node.reference.field_site_url
+    - image.style.large_600x400
     - node.type.reference
   module:
     - image
@@ -29,7 +30,7 @@ content:
     weight: 102
     label: above
     settings:
-      image_style: ''
+      image_style: large_600x400
       image_link: ''
     third_party_settings: {  }
     type: image

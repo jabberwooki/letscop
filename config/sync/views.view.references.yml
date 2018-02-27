@@ -421,6 +421,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: view-references
     cache_metadata:
       max-age: -1
       contexts:
@@ -443,10 +444,10 @@ display:
         options:
           uses_fields: false
           columns: 2
-          automatic_width: true
+          automatic_width: false
           alignment: horizontal
           col_class_default: true
-          col_class_custom: ''
+          col_class_custom: ref-before-text
           row_class_default: true
           row_class_custom: ''
       defaults:
@@ -455,6 +456,7 @@ display:
         pager: false
         fields: false
         css_class: false
+        footer: false
       row:
         type: 'ds_entity:node'
         options:
@@ -731,6 +733,20 @@ display:
           plugin_id: custom
       display_description: ''
       css_class: col-sm-6
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: ''
+            format: restricted_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
