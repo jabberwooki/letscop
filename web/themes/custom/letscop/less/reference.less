@@ -1,0 +1,88 @@
+/* liste des références */
+.path-references {
+  .row {
+    margin: 0 -10px !important;
+  }
+  @media (min-width: 768px){
+    .col-sm-12 {
+      width: 100.6%;
+    }
+  }
+  .view-references {
+    .views-col {
+      .node--view-mode-teaser {
+        max-width: 100%;
+      }
+      .bs-region {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        .info-text-ref {
+          display: none;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background: #999;
+          background: rgba(0, 0, 0, 0.8);
+          text-align: center;
+          a {
+            color: #00cc99;
+            display: block;
+            padding: 20% 10px 0 10px;
+          }
+          p {
+            color: #FFF;
+            padding: 10px;
+          }
+        }
+        img {
+          max-width: 100%;
+        }
+        &:hover .info-text-ref {
+          display: block
+        }
+      }
+
+    }
+
+  }
+
+  #block-views-block-references-block2 {
+    .ref-before-text{
+      margin-left: -10px;
+    }
+    display: block;
+    width: 51%;
+    float: left;
+    .col-sm-6 {
+      width: auto;
+    }
+    .views-col {
+      width: 51%;
+    }
+  }
+  #block-textedelapagereferences {
+    float: left;
+    width: 50%;
+    height: 200px;
+    margin: 0 0 0 -23px;
+    background-color: @vert-letscop;
+    p {
+      color: #FFF;
+      display: table;
+      margin: 40px auto;
+      font-weight: bold;
+      font-size: 1.6em;
+    }
+  }
+  .cols-2 {
+    .clearfix:after,
+    .clearfix:before {
+      clear: none !important;
+    }
+  }
+
+}
