@@ -7,6 +7,7 @@ description: 'Uses the Bootstrap framework LESS source files and must be compile
 package: 'Letscop'
 
 regions:
+  logo: 'logo'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   header: 'Top Bar'
