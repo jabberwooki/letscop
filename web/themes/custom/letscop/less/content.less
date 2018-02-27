@@ -1,19 +1,20 @@
 .main-container {
   padding: 0;
 
-  > .row {
-    margin-left: auto;
-    margin-right: auto;
-
-    h1.page-header {
-      color: #00cc99;
+  .row {
+    h2.page-header {
+      color: @vert-letscop;
       border: none;
       margin-bottom: 0;
       padding-bottom: 0;
+      font-family: Helvetica Neue,arial;
+      text-transform: uppercase;
+      margin: 123px 0 -6px 22px;
+      padding: 0;
+      font-weight: bold;
     }
   }
 }
-
 // DIAPORAMA ACCUEIL
 body.path-frontpage > .main-container > .row > .col-sm-12 {
   padding: 0;
@@ -31,16 +32,14 @@ body.path-frontpage > .main-container > .row > .col-sm-12 {
         .slide__caption {
           position: absolute;
           top: 20%;
-          left: 50%;
+          right: 26%;
           z-index: 100;
           padding: 1em 2em;
-          background-color: #000;
-          opacity: 0.6;
+          background: rgba(12, 24, 26, 0.8);git st
           border: 5px solid #0c9;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
           border-radius: 10px;
-
           .slide__title {
             color: white;
             margin: 0;
@@ -93,16 +92,17 @@ body.path-frontpage > .main-container > .row > .col-sm-12 {
 // RUBRIQUE AGENCE
 body.path-agence {
   background-image: url("../images/agence-bg.jpg");
+  @media (min-width: @screen-sm) {
+    .main-container.container{
+      width: 560px !important;
 
-  .region-content {
-    width: 40%;
-    margin: 0 auto;
-
+    }
     article {
       background-color: white;
       padding: 20px;
     }
   }
+
 }
 
 // RUBRIQUE EQUIPE

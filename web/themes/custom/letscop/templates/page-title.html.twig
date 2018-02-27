@@ -16,8 +16,13 @@
  * @see template_preprocess_page_title()
  */
 #}
-{% if not is_front %}
-  {% if title %}
-    <h1{{ title_attributes.addClass('page-header') }}>{{ title }}</h1>
-  {% endif %}
+{% if is_contact_page %}
+    {% if title %}
+        <h2 class="contact-title-page">{{ title }}</h2>
+    {% endif %}
+{% elseif not is_front %}
+    {% if title %}
+        {{ title }}
+    {% endif %}
 {% endif %}
+

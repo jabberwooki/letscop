@@ -12,7 +12,7 @@ dependencies:
     - letscop
 third_party_settings:
   block_class:
-    classes: 'col-sm-6 col-sm-offset-6'
+    classes: texte-page-references
 id: textedelapagereferences
 theme: letscop
 region: content

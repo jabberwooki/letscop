@@ -11,7 +11,7 @@ _core:
 id: letscop_powered
 theme: letscop
 region: navigation
-weight: -4
+weight: -7
 provider: null
 plugin: system_powered_by_block
 settings:

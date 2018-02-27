@@ -1,0 +1,14 @@
+uuid: 5889b4fc-687a-4190-9835-497a4d641235
+langcode: fr
+status: true
+dependencies: {  }
+name: large_600x400
+label: grand-600x400
+effects:
+  9a4997dd-b4a6-461c-a0c4-c892800c44f5:
+    uuid: 9a4997dd-b4a6-461c-a0c4-c892800c44f5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 400

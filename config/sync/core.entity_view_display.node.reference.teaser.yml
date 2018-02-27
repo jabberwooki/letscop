@@ -7,6 +7,8 @@ dependencies:
     - field.field.node.reference.body
     - field.field.node.reference.field_image
     - field.field.node.reference.field_made_by
+    - field.field.node.reference.field_site_url
+    - image.style.large_600x400
     - node.type.reference
   module:
     - ds
@@ -41,41 +43,34 @@ third_party_settings:
         - group_text_infos
         - node_title
         - body
-        - node_link
     fields:
       node_title:
         plugin_id: node_title
         weight: 12
         label: hidden
         formatter: default
-      node_link:
-        plugin_id: node_link
-        weight: 14
-        label: hidden
-        formatter: default
         settings:
-          'link text': Voir
-          'link class': ''
-          wrapper: ''
+          link: true
+          wrapper: h2
           class: ''
   field_group:
     group_text_infos:
       children:
         - node_title
         - body
-        - node_link
       parent_name: ''
       weight: 1
       format_type: html_element
       format_settings:
-        id: ''
-        classes: ''
+        label: 'Infos texte'
         element: div
         show_label: false
         label_element: h3
         attributes: ''
         effect: none
         speed: fast
+        id: ''
+        classes: info-text-ref
       label: 'Infos texte'
 id: node.reference.teaser
 targetEntityType: node
@@ -96,10 +91,11 @@ content:
     region: main
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      image_style: large_600x400
+      image_link: content
     third_party_settings: {  }
 hidden:
   field_made_by: true
+  field_site_url: true
   langcode: true
   links: true
