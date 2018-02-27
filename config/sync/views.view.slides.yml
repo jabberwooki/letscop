@@ -58,7 +58,7 @@ display:
         type: slick
         options:
           vanilla: false
-          optionset: default
+          optionset: front_slideshow
           skin: ''
           layout: ''
           caption:
@@ -82,9 +82,9 @@ display:
           id: ''
           override: true
           overridables:
+            autoplay: autoplay
             dots: dots
             arrows: '0'
-            autoplay: '0'
             draggable: '0'
             infinite: '0'
             mouseWheel: '0'
